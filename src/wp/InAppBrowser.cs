@@ -321,28 +321,31 @@ namespace WPCordovaClassLib.Cordova.Commands
                             }
 
                             ApplicationBar bar = new ApplicationBar();
-                            bar.BackgroundColor = Colors.Gray;
+                            /// bar.BackgroundColor = Colors.Gray;
+                            bar.BackgroundColor = Colors.Black;
                             bar.IsMenuEnabled = false;
 
                             backButton = new ApplicationBarIconButton();
-                            backButton.Text = "Back";
-
-                            backButton.IconUri = new Uri(baseImageUrl + "appbar.back.rest.png", UriKind.Relative);
+                            /// backButton.Text = "Back";
+                            backButton.Text = "";
+                            /// backButton.IconUri = new Uri(baseImageUrl + "appbar.back.rest.png", UriKind.Relative);
                             backButton.Click += new EventHandler(backButton_Click);
-                            bar.Buttons.Add(backButton);
+                            /// bar.Buttons.Add(backButton);
 
 
                             fwdButton = new ApplicationBarIconButton();
-                            fwdButton.Text = "Forward";
-                            fwdButton.IconUri = new Uri(baseImageUrl + "appbar.next.rest.png", UriKind.Relative);
+                            /// fwdButton.Text = "Forward";
+                            fwdButton.Text = "";
+                            /// fwdButton.IconUri = new Uri(baseImageUrl + "appbar.next.rest.png", UriKind.Relative);
                             fwdButton.Click += new EventHandler(fwdButton_Click);
-                            bar.Buttons.Add(fwdButton);
+                            /// bar.Buttons.Add(fwdButton);
 
                             ApplicationBarIconButton closeBtn = new ApplicationBarIconButton();
-                            closeBtn.Text = "Close";
-                            closeBtn.IconUri = new Uri(baseImageUrl + "appbar.close.rest.png", UriKind.Relative);
+                            /// closeBtn.Text = "Close";
+                            closeBtn.Text = "";
+                            /// closeBtn.IconUri = new Uri(baseImageUrl + "appbar.close.rest.png", UriKind.Relative);
                             closeBtn.Click += new EventHandler(closeBtn_Click);
-                            bar.Buttons.Add(closeBtn);
+                            /// bar.Buttons.Add(closeBtn);
 
                             page.ApplicationBar = bar;
                             bar.IsVisible = !StartHidden;
@@ -366,7 +369,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             }
             else
             {
-                close();
+                /// close();
             }
             e.Cancel = true;
 #else
