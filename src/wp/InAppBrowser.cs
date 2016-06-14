@@ -386,9 +386,9 @@ namespace WPCordovaClassLib.Cordova.Commands
                 try
                 {
 #if WP8
-                    browser.GoForward();
+                    /// browser.GoForward();
 #else
-                    browser.InvokeScript("execScript", "history.forward();");
+                    /// browser.InvokeScript("execScript", "history.forward();");
 #endif
                 }
                 catch (Exception)
@@ -405,9 +405,9 @@ namespace WPCordovaClassLib.Cordova.Commands
                 try
                 {
 #if WP8
-                    browser.GoBack();
+                    /// browser.GoBack();
 #else
-                    browser.InvokeScript("execScript", "history.back();");
+                    /// browser.InvokeScript("execScript", "history.back();");
 #endif
                 }
                 catch (Exception)
@@ -419,7 +419,7 @@ namespace WPCordovaClassLib.Cordova.Commands
 
         void closeBtn_Click(object sender, EventArgs e)
         {
-            this.close();
+            /// this.close();
         }
 
 
