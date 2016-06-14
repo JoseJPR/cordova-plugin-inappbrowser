@@ -348,7 +348,8 @@ namespace WPCordovaClassLib.Cordova.Commands
                             /// bar.Buttons.Add(closeBtn);
 
                             page.ApplicationBar = bar;
-                            bar.IsVisible = !StartHidden;
+                            //bar.IsVisible = !StartHidden;
+                            bar.IsVisible = false;
                             AppBar = bar;
 
                             page.BackKeyPress += page_BackKeyPress;
